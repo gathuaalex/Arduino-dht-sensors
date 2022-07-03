@@ -69,6 +69,8 @@ void loop() {
   Serial.print(hif);
   Serial.println(" *F");
 }
+
+// added function
 void control(float temp,float humidity){
   if (temp>28.5 && humidity >50.5){
     digitalWrite(led,HIGH);
